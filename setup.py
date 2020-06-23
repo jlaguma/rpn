@@ -12,6 +12,9 @@ with open('README.md', encoding='utf8') as file:
 setup(
     name='rpn',
     version=rpn.__version__,
+    author=rpn.__author__,
+    author_email='james@taran.biz',
+    url='https://github.com/jlaguma/rpn',
     packages=['rpn'],
     package_data={},
     install_requires=['click'],
@@ -19,8 +22,5 @@ setup(
     description='Reverse Polish Notation Calculator',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author=rpn.__author__,
-    author_email='james@taran.biz',
-    url='https://www.linkedin.com/in/jlaguma/',
     entry_points={'console_scripts': ['rpn = rpn.__main__:main']},
 )
